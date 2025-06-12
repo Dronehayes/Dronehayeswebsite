@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drone Hayes | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <marquee class="moving-text" 
+    behavior="scroll"direction="left">
+    Welcome to my Portfolio| I'm a web developer| Let's connect !</marquee>
+    <h1>Drone Hayes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Project</a>
+      <a href="blog.html">Blog</a>
+      <a href="blogpost.html">posts</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+   
+  </header>
+
+  <main>
+    <section class="video">
+      <h2>🎬 Entertainment Corner</h2>
+      <div class="video-grid">
+    
+        <!-- Video 1 -->
+        <div class="video-card">
+          <video controls>
+            <source src="../assets/videos/st.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Funny Clip</p>
+        </div>
+    
+        <!-- Video 2 -->
+        <div class="card">
+          <video controls>
+            <source src="../assets/videos/bj.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Daily Motivation</p>
+        </div>
+    
+        <!-- Video 3 -->
+        <div class="mess">
+          <video controls>
+            <source src="../assets/videos/sd.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Dance Vibes</p>
+        </div>
+    
+      </div>
+    </section>
+    <section>
+      <h2>Welcome to My Portfolio</h2>
+      <p>Hi there am DRONE HAYES a Cyber tech enthusiast passionate about AI, cybersecurity,online income strategies, web development,UX design and data analysis.</p>
+      <p>i thrive on creating projects that blend creativity,reality and technology.</p>
+        <p>Let's connect and turn your ideas into life!</p> 
+        <p>
+        <form>
+          <label>Terms&Conditions</label>
+          <input type="checkbox"name="T&C"values=I agree to Terms&conditions>
+          <inpute type="submit"value="save">
+            <audio id="playsound" src="../assets/images/song.mp3" preload="auto"></audio>
+            <img src="../assets/images/logo.png"
+            onclick="document.getElementById('playsound').play()"style="cursor:pointer;"width="30">
+        </form>
+      </p>
+    </section>
+</form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Drone Hayes</p>
+  </footer>
+  <script>
+    function changevideo(videosrc){
+      const mainvideo=document.getElementById("mainvideo");
+      mainvideo.src=videosrc;
+      mainvideo.load();
+      mainvideo.play();
+    }
+    </script>
+</body>
+</html>

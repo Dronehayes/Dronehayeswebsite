@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The following are my archivements| Drone Hayes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<script>
+  function changevideo(videosrc){
+    const mainvideo=document.getElementById("mainvideo");
+    mainvideo.src=videosrc;
+    mainvideo.load();
+    mainvideo.play();
+  }
+</script>
+<body>
+    <header>Drone Hayes
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="blog.html">Blog</a>
+        <a href="blogpost.html">posts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+        <h1>MY ARCHIVEMENTS</h1>
+  <section id="video-galary">
+    <h2>Entertainment Videos</h2>
+    <video id="mainvideo" width="320" controls>
+      <source src="video/video1.mp4"
+      type="video/mp4">
+    </video>
+    <div class="thumbnails">
+      <img src="thumbs/thumbs1.jpg"
+      onclick="changevideo('video/video 1.mp4')"
+      alt="video 1">
+      <img src="thumbs/thumbs2.jpg"
+      onclick="changevideo('video/video 2.mp4')"
+      alt="video 2">
+      <img src="thumbs/thumbs3.jpg"
+      onclick="changevideo('video/video 3.mp4')"
+      alt="video 3">
+    </div>
+  </section>
+
+    </main>
+</body>

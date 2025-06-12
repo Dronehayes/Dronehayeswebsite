@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.addEventListener("DOMContentLoaded"
+    ,function(){
+      const form=document.querySelector("form");
+      form.addEventListener("submit",
+      function(){setTimeout(() => {
+        alert("Thank you your message has been sent succefully");
+
+        
+      }, 100);
+    });
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Drone Hayes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Drone Hayes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Project</a>
+      <a href="blog.html">Blog</a>
+      <a href="blogpost.html">posts</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Help center</p>
+    <h2>Contact Me : <img src="../assets/images/wats.gif">+254769659252 </h2>
+    <h2>Find me on <img src="../assets/images/fb.png">Codwel Hayes</h2></h2>
+    <form
+    action="https://formspree.io/f/xnnvdvyw"
+    method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" required /><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required /><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea id="message" rows="5" required></textarea><br>
+  
+      <button type="submit">Send</button>
+    </form>
+    <p id="message-box"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Drone Hayes</p>
+  </footer>
+  <script src="js/main.js">
+
+  </script>
+</body>
+</html>
