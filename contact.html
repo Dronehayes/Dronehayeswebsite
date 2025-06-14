@@ -5,9 +5,13 @@
   window.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Stop the redirect
+      event.preventDefault(); // Temporarily stop submission
       alert("Thank you, your message has been sent successfully!");
-      form.submit(); // Manually submit the form after alert
+      
+      // Wait for 300ms then submit the form
+      setTimeout(() => {
+        form.submit();
+      }, 300);
     });
   });
   </script>
