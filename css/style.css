@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-image: url("assets/images/nature.png");
   background-size: cover;
-  background-position: center;
+  background-position: 100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
@@ -15,7 +15,7 @@ header {
   background-size: cover;
   padding: 20px;
   text-align: center;
-  color: white;
+  
 }
 
 .moving-text {
