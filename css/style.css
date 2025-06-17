@@ -90,6 +90,9 @@ nav {
   color: #fff;
   margin: 0px;
   text-decoration: wavy;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right:10px;
 }
 main{
   padding: 3%;
