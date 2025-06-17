@@ -86,13 +86,35 @@ mess{
 .thumbnails img:hover{
 border-color: #e30909;
 }
-nav {
-  color: #fff;
-  margin: 0px;
-  text-decoration: wavy;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right:10px;
+/* Make nav links more visible and spaced */
+nav a {
+  display: inline-block;
+  color: white;
+  font-size: 18px; /* Bigger font */
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Optional: give them a hover effect */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Responsive: even larger font and stacked layout on small screens */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 20px; /* Larger font on mobile */
+    padding: 12px 20px;
+  }
 }
 main{
   padding: 3%;
