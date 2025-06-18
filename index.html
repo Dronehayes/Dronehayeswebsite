@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <marquee class="moving-text" behavior="scroll" direction="left">
       Welcome to my website | I'm a web developer | Let's connect!
@@ -22,10 +23,13 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
+    <!-- Video Section -->
     <section class="video">
       <h2>🎬 Educational Corner</h2>
       <div class="video-grid">
+
         <!-- Video 1 -->
         <div class="video-card">
           <video controls>
@@ -52,33 +56,40 @@
           </video>
           <p class="video-title">Dance Vibes</p>
         </div>
+
       </div>
     </section>
 
-    <section>
+    <!-- About Section -->
+    <section class="intro">
       <h2>Welcome to My Website</h2>
-      <p>Hi there, I'm DRONE HAYES – a Cyber Tech enthusiast passionate about AI, cybersecurity, online income strategies, web development, UX design, and data analysis.</p>
+      <p>Hi there, I'm <strong>DRONE HAYES</strong> – a Cyber Tech enthusiast passionate about AI, cybersecurity, online income strategies, web development, UX design, and data analysis.</p>
       <p>I thrive on creating projects that blend creativity, reality, and technology.</p>
       <p>Let's connect and turn your ideas into life!</p>
 
+      <!-- Form Section -->
       <form>
         <label>
           <input type="checkbox" name="T&C" value="agree" />
           I agree to Terms & Conditions
         </label><br />
         <input type="submit" value="Save" />
+      </form>
 
+      <!-- Audio and Image Trigger -->
+      <div style="margin-top: 10px;">
         <audio id="playsound" src="assets/images/song.mp3" preload="auto"></audio>
         <img
           src="assets/images/logo.png"
           onclick="document.getElementById('playsound').play()"
           style="cursor: pointer; width: 30px;"
-          alt="Play"
+          alt="Play Logo"
         />
-      </form>
+      </div>
     </section>
   </main>
 
+  <!-- Footer Section -->
   <footer>
     <p>
       &copy; 2025 Drone Hayes |
@@ -86,6 +97,7 @@
     </p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
     function changevideo(videosrc) {
       const mainvideo = document.getElementById("mainvideo");
@@ -95,4 +107,4 @@
     }
   </script>
 </body>
-          </html>
+  </html>
